@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		96B3BB6D29573C5000CC2FC9 /* CollectionViewCell1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96B3BB6C29573C5000CC2FC9 /* CollectionViewCell1.swift */; };
 		96DEA5B0295736B200BD2193 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96DEA5AF295736B200BD2193 /* AppDelegate.swift */; };
 		96DEA5B2295736B200BD2193 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96DEA5B1295736B200BD2193 /* SceneDelegate.swift */; };
 		96DEA5B4295736B200BD2193 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96DEA5B3295736B200BD2193 /* ViewController.swift */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		96B3BB6C29573C5000CC2FC9 /* CollectionViewCell1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell1.swift; sourceTree = "<group>"; };
 		96DEA5AC295736B200BD2193 /* Apis.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Apis.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		96DEA5AF295736B200BD2193 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		96DEA5B1295736B200BD2193 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -62,6 +64,7 @@
 				96DEA5B1295736B200BD2193 /* SceneDelegate.swift */,
 				96DEA5B3295736B200BD2193 /* ViewController.swift */,
 				96DEA5C329573A7700BD2193 /* CollectionViewCell.swift */,
+				96B3BB6C29573C5000CC2FC9 /* CollectionViewCell1.swift */,
 				96DEA5B5295736B200BD2193 /* Main.storyboard */,
 				96DEA5B8295736B400BD2193 /* Assets.xcassets */,
 				96DEA5BA295736B400BD2193 /* LaunchScreen.storyboard */,
@@ -141,6 +144,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				96B3BB6D29573C5000CC2FC9 /* CollectionViewCell1.swift in Sources */,
 				96DEA5B4295736B200BD2193 /* ViewController.swift in Sources */,
 				96DEA5B0295736B200BD2193 /* AppDelegate.swift in Sources */,
 				96DEA5C429573A7700BD2193 /* CollectionViewCell.swift in Sources */,

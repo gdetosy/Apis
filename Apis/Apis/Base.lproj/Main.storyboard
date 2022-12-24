@@ -8,30 +8,30 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Collection View Controller-->
+        <!--ActionsCV Controller-->
         <scene sceneID="SbE-7j-GD5">
             <objects>
-                <collectionViewController id="MAt-CJ-vbA" sceneMemberID="viewController">
+                <collectionViewController id="MAt-CJ-vbA" customClass="ActionsCVController" customModule="Apis" customModuleProvider="target" sceneMemberID="viewController">
                     <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="hc0-MZ-2cc">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="dVC-gW-mSm">
-                            <size key="itemSize" width="128" height="128"/>
+                            <size key="itemSize" width="393" height="105"/>
                             <size key="headerReferenceSize" width="0.0" height="0.0"/>
                             <size key="footerReferenceSize" width="0.0" height="0.0"/>
                             <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                         </collectionViewFlowLayout>
                         <cells>
-                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="YgL-i6-ey3">
-                                <rect key="frame" x="0.0" y="0.0" width="92" height="128"/>
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="Cell" id="YgL-i6-ey3" customClass="CollectionViewCell1" customModule="Apis" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="105"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="ZI3-2U-Y5z">
-                                    <rect key="frame" x="0.0" y="0.0" width="92" height="128"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="393" height="105"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wzg-tO-Pep">
-                                            <rect key="frame" x="25" y="53.666666666666657" width="42" height="21"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wzg-tO-Pep">
+                                            <rect key="frame" x="25" y="42" width="343" height="21"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
@@ -45,6 +45,10 @@
                                     </constraints>
                                 </collectionViewCellContentView>
                                 <color key="backgroundColor" red="0.99942404029999998" green="0.98555368190000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <size key="customSize" width="393" height="105"/>
+                                <connections>
+                                    <outlet property="infoLbl" destination="wzg-tO-Pep" id="yN6-l5-OdW"/>
+                                </connections>
                             </collectionViewCell>
                         </cells>
                         <connections>
