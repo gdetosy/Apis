@@ -30,14 +30,18 @@ class ActionsCVController: UICollectionViewController {
     }
 
     // MARK: UICollectionViewDelegate
-    
-    override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        let userActon = userActons[indexPath.row]
-        switch userActon {
-            case .downloadImage: performSegue(withIdentifier: "DownloadImageSegue", sender: nil)
-            case .users: performSegue(withIdentifier: "UsersSegue", sender: nil)
-        }
-    }
+  
+//    override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+//        let userActon = userActons[indexPath.row]
+//        let storyboardInstance = UIStoryboard(name: "Main", bundle: nil)
+//        switch userActon {
+//            case .downloadImage:
+//                let nextViewController = storyboardInstance.instantiateViewController(withIdentifier: "ImageViewController")
+//                self.navigationController?.pushViewController(nextViewController, animated: true)
+//                                                        
+//            case .users: performSegue(withIdentifier: "UsersSegue", sender: nil)
+//        }
+//    }
 
     /*
     // Uncomment this method to specify if the specified item should be highlighted during tracking
@@ -68,9 +72,9 @@ class ActionsCVController: UICollectionViewController {
     }
     */
 }
-
-extension ActionsCVController: UICollectionViewDelegateFlowLayout {
-    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        CGSize(width: (UIScreen.main.bounds.width - 20), height: 80)
-    }
-}
+//
+//extension ActionsCVController: UICollectionViewDelegateFlowLayout {
+//    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+//        CGSize(width: (UIScreen.main.bounds.width - 20), height: 80)
+//    }
+//}

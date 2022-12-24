@@ -3,6 +3,7 @@
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="collection view cell content view" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -48,6 +49,7 @@
                                 <size key="customSize" width="393" height="105"/>
                                 <connections>
                                     <outlet property="infoLbl" destination="wzg-tO-Pep" id="yN6-l5-OdW"/>
+                                    <segue destination="mpa-Hx-45T" kind="show" identifier="Image" id="1Uw-xx-MlR"/>
                                 </connections>
                             </collectionViewCell>
                         </cells>
@@ -61,6 +63,46 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Qwd-9f-U34" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="854.19847328244271" y="10.563380281690142"/>
+        </scene>
+        <!--Image View Controller-->
+        <scene sceneID="Jcm-PY-ea6">
+            <objects>
+                <viewController storyboardIdentifier="ImageViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="mpa-Hx-45T" customClass="ImageViewController" customModule="Apis" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="QIt-Sl-Mei">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="SeekPng.com_image-icon-png_2355250" translatesAutoresizingMaskIntoConstraints="NO" id="8Kz-HR-Lrw">
+                                <rect key="frame" x="10" y="103" width="373" height="646"/>
+                            </imageView>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" animating="YES" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="AlK-Oe-s3K">
+                                <rect key="frame" x="186.66666666666666" y="417.33333333333331" width="20" height="17.333333333333314"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="AlK-Oe-s3K" secondAttribute="height" multiplier="68:59" id="0Y4-ex-ZMc"/>
+                                </constraints>
+                            </activityIndicatorView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="R47-GT-auA"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="8Kz-HR-Lrw" firstAttribute="centerX" secondItem="QIt-Sl-Mei" secondAttribute="centerX" id="1eS-QO-Eea"/>
+                            <constraint firstItem="8Kz-HR-Lrw" firstAttribute="centerY" secondItem="QIt-Sl-Mei" secondAttribute="centerY" id="2NZ-EJ-mjJ"/>
+                            <constraint firstItem="AlK-Oe-s3K" firstAttribute="centerY" secondItem="QIt-Sl-Mei" secondAttribute="centerY" id="9yW-38-3BL"/>
+                            <constraint firstItem="AlK-Oe-s3K" firstAttribute="centerX" secondItem="QIt-Sl-Mei" secondAttribute="centerX" id="Dgf-Zk-S41"/>
+                            <constraint firstAttribute="trailing" secondItem="8Kz-HR-Lrw" secondAttribute="trailing" constant="10" id="FOq-oQ-k9C"/>
+                            <constraint firstItem="8Kz-HR-Lrw" firstAttribute="top" secondItem="R47-GT-auA" secondAttribute="top" id="XtT-Pb-BcR"/>
+                            <constraint firstItem="8Kz-HR-Lrw" firstAttribute="leading" secondItem="R47-GT-auA" secondAttribute="leading" constant="10" id="kOn-nY-j6S"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="gx5-Gv-f4K"/>
+                    <connections>
+                        <outlet property="activityIndicatorView" destination="AlK-Oe-s3K" id="oy1-VS-UBi"/>
+                        <outlet property="image" destination="8Kz-HR-Lrw" id="sRs-Gm-I17"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WaW-Ux-WvQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1765.6488549618321" y="-179.57746478873241"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="E50-p5-nEM">
@@ -82,6 +124,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="SeekPng.com_image-icon-png_2355250" width="2001" height="1655"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
