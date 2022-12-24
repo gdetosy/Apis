@@ -13,6 +13,7 @@
 		96DEA5B7295736B200BD2193 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 96DEA5B5295736B200BD2193 /* Main.storyboard */; };
 		96DEA5B9295736B400BD2193 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 96DEA5B8295736B400BD2193 /* Assets.xcassets */; };
 		96DEA5BC295736B400BD2193 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 96DEA5BA295736B400BD2193 /* LaunchScreen.storyboard */; };
+		96DEA5C429573A7700BD2193 /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96DEA5C329573A7700BD2193 /* CollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		96DEA5B8295736B400BD2193 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		96DEA5BB295736B400BD2193 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		96DEA5BD295736B400BD2193 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		96DEA5C329573A7700BD2193 /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +61,7 @@
 				96DEA5AF295736B200BD2193 /* AppDelegate.swift */,
 				96DEA5B1295736B200BD2193 /* SceneDelegate.swift */,
 				96DEA5B3295736B200BD2193 /* ViewController.swift */,
+				96DEA5C329573A7700BD2193 /* CollectionViewCell.swift */,
 				96DEA5B5295736B200BD2193 /* Main.storyboard */,
 				96DEA5B8295736B400BD2193 /* Assets.xcassets */,
 				96DEA5BA295736B400BD2193 /* LaunchScreen.storyboard */,
@@ -140,6 +143,7 @@
 			files = (
 				96DEA5B4295736B200BD2193 /* ViewController.swift in Sources */,
 				96DEA5B0295736B200BD2193 /* AppDelegate.swift in Sources */,
+				96DEA5C429573A7700BD2193 /* CollectionViewCell.swift in Sources */,
 				96DEA5B2295736B200BD2193 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

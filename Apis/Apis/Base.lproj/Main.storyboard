@@ -24,21 +24,23 @@
                         </collectionViewFlowLayout>
                         <cells>
                             <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="YgL-i6-ey3">
-                                <rect key="frame" x="0.0" y="0.0" width="127.99999999999997" height="128"/>
+                                <rect key="frame" x="0.0" y="0.0" width="92" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="ZI3-2U-Y5z">
-                                    <rect key="frame" x="0.0" y="0.0" width="127.99999999999997" height="128"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="92" height="128"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wzg-tO-Pep">
-                                            <rect key="frame" x="43" y="53.666666666666657" width="42" height="21"/>
+                                            <rect key="frame" x="25" y="53.666666666666657" width="42" height="21"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
                                     <constraints>
+                                        <constraint firstItem="wzg-tO-Pep" firstAttribute="leading" secondItem="ZI3-2U-Y5z" secondAttribute="leading" constant="25" id="SjQ-eK-TrP"/>
                                         <constraint firstItem="wzg-tO-Pep" firstAttribute="centerX" secondItem="ZI3-2U-Y5z" secondAttribute="centerX" id="ZJQ-Ub-6ZF"/>
+                                        <constraint firstAttribute="trailing" secondItem="wzg-tO-Pep" secondAttribute="trailing" constant="25" id="gWe-pw-kgy"/>
                                         <constraint firstItem="wzg-tO-Pep" firstAttribute="centerY" secondItem="ZI3-2U-Y5z" secondAttribute="centerY" id="hgB-P6-6yH"/>
                                     </constraints>
                                 </collectionViewCellContentView>
